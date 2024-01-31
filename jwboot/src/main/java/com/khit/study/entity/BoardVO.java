@@ -2,9 +2,13 @@ package com.khit.study.entity;
 
 import java.util.Date;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
+@ToString
+@Setter
+@Getter
 public class BoardVO {
 	private int id;
 	private String title;
