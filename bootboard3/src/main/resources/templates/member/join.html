@@ -26,11 +26,15 @@
 		  			<p id="check-result"></p>
 		  		</li>
 		  		<li>
-		  			<label for="password">비밀번호</label>
-		  			<input type="password" th:field="*{password}" id="password">
-		  		    <p th:if="${#fields.hasErrors('password')}" 
-		  			   th:errors="*{password}" class="error"></p>
-		  		</li>
+				    <label for="password">비밀번호</label>
+				    <input type="password" th:field="*{password}" id="password">
+				    <p th:if="${#fields.hasErrors('password')}" 
+				    th:errors="*{password}" class="error"></p>
+				</li>
+		  		<li>
+				    <label for="password">비밀번호 확인</label>
+				    <input type="password" th:field="*{password}" id="password2">
+				</li>
 		  		<li>
 		  			<label for="name">이름</label>
 		  			<input type="text" th:field="*{name}" id="name">
@@ -50,6 +54,12 @@
 		  			   th:errors="*{memberAge}" class="error"></p>
 		  		</li>
 		  		<li>
+		  			<label for="mnumber">전화번호</label>
+		  			<input type="text" th:field="*{mnumber}" id="mnumber">
+		  			<p th:if="${#fields.hasErrors('mnumber')}" 
+		  			   th:errors="*{mnumber}" class="error"></p>
+		  		</li>
+		  		<li>
 		  			<label for="memberArea">지역</label>
 		  			<input type="text" th:field="*{memberArea}" id="memberArea">
 		  			<p th:if="${#fields.hasErrors('memberArea')}" 
@@ -65,6 +75,7 @@
 	  </section>
 	</div>
 <script>
+
 	const checkEmail = () => {
 		//alert("test...");
 		let inputEmail = document.getElementById("memberEmail").value;

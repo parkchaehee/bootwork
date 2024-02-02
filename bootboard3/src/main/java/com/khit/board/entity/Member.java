@@ -44,6 +44,9 @@ public class Member extends BaseEntity{
 	
 	@Column
 	private String memberAge;
+	
+	@Column
+	private String mnumber;
 	   
 	@Column
 	private String memberArea;
@@ -61,6 +64,7 @@ public class Member extends BaseEntity{
 				.name(memberDTO.getName())
 				.memberEmail(memberDTO.getMemberEmail())
 				.memberAge(memberDTO.getMemberAge())
+				.mnumber(memberDTO.getMnumber())
 				.memberArea(memberDTO.getMemberArea())
 				.role(memberDTO.getRole())
 				.build();
@@ -76,6 +80,7 @@ public class Member extends BaseEntity{
 				.name(memberDTO.getName())
 				.memberEmail(memberDTO.getMemberEmail())
 				.memberAge(memberDTO.getMemberAge())
+				.mnumber(memberDTO.getMnumber())
 				.memberArea(memberDTO.getMemberArea())
 				.role(memberDTO.getRole())
 				.build();

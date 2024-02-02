@@ -32,6 +32,9 @@ public class MemberDTO {
 	
 	@NotEmpty(message = "나이는 필수 항목입니다.")
 	private String memberAge;
+	
+	@NotEmpty(message = "전화번호는 필수 항목입니다.")
+	private String mnumber;
 	   
 	@NotEmpty(message = "지역은 필수 항목입니다.")
 	private String memberArea;
@@ -52,6 +55,7 @@ public class MemberDTO {
 				.name(member.getName())
 				.memberEmail(member.getMemberEmail())
 				.memberAge(member.getMemberAge())
+				.mnumber(member.getMnumber())
 				.memberArea(member.getMemberArea())				
 				.role(member.getRole())
 				.createdDate(member.getCreatedDate())
@@ -60,4 +64,5 @@ public class MemberDTO {
 		
 		return memberDTO;
 	}
+
 }

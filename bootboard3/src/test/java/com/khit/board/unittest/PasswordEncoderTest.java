@@ -22,15 +22,16 @@ public class PasswordEncoderTest {
 	public void testInsertData() {
 		//일반 회원 - 저장
 		Member member = new Member();
-		member.setMemberId("khit2");
-		member.setPassword(pwEncoder.encode("khit2"));
-		member.setName("김하나2");
-		member.setMemberEmail("khit2.@naver.com");
-		member.setMemberAge(22);
-		member.setMemberArea("서울2");
+		member.setMemberId("chae1");
+		member.setPassword(pwEncoder.encode("1"));
+		member.setName("박하나1");
+		member.setMemberEmail("chaeh1@naver.com");
+		member.setMemberAge("990202");
+		member.setNumber("11");
+		member.setMemberArea("인천");
 		member.setRole(Role.MEMBER);
 		
 		memberRepository.save(member);
-	}
-*/
+	}*/
+
 }
