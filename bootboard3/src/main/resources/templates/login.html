@@ -5,10 +5,11 @@
 <title>로그인</title>
 <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
-<body class="ch">
+<body>
+	<div class="ch">
     <div th:replace="~{header::header-fragment}"></div>
 	<div id="container">
-	   <section id="login">
+	  <section id="login">
 		<h2>로그인</h2>
 		<form th:action="@{/login}" method="post" class="loginform">
 		  <fieldset>
@@ -19,14 +20,30 @@
 		  		<li>
 		  			<input type="password" name="password" id="password" placeholder="비밀번호를 입력해주세요.">
 		  		</li>
-		  	    <li>
-		  			<input type="submit" value="로그인">
-		  			<button type="button" onclick="location.href='/member/join'">회원가입</button>
+		  	  	<li>
+		  			<input type="submit" value="로그인" id="loginbutton">
+				</li>
+				<li>
+		  			<input type="button" onclick="location.href='/member/join'" 
+									value="회원가입" id="join">
+		  		</li>
+
+					<div class="line">
+						or
+					</div>
+					
+				
+				<li>
+		  			<input type="button" value="네이버로그인">
+		  		</li>
+					<li>
+		  			<input type="button" value="구글로그인 ">
 		  		</li>
 		  	</ul>
 		  </fieldset>
 		</form>
 	   </section>
 	</div>
+</div>
 </body>
 </html>

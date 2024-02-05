@@ -41,7 +41,7 @@ public class MemberService {
 		//2. 권한 설정
 		String encPW = pwEncoder.encode(memberDTO.getPassword());
 		memberDTO.setPassword(encPW);
-		memberDTO.setRole(Role.MEMBER);
+		memberDTO.setRole(Role.ADMIN);
 		
 		//dto -> entity 변환 메서드
 		Member member = Member.toSaveEntity(memberDTO);
@@ -90,7 +90,7 @@ public class MemberService {
 		//암호화, 권한 설정
 		String encPW = pwEncoder.encode(memberDTO.getPassword());
 		memberDTO.setPassword(encPW);
-		memberDTO.setRole(Role.MEMBER);
+		memberDTO.setRole(Role.ADMIN);
 		
 		//변환시 엔티티 메서드를 toSaveUpdate()로 바꿔줌
 		Member member = Member.toSaveUpdate(memberDTO);
