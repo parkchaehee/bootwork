@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
@@ -6,39 +6,39 @@
 <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
+    <div th:replace="~{header::header-fragment}"></div>
 	<div id="container">
+	  <section id="detail">
 		<h2>회원 정보</h2>
 		<div class="detail">
-		   <fieldset>
-		  	<ul>
-		  		<li>
-		  			<label for="memberEmail">이메일</label>
-		  			<input type="text" name="memberEmail" readonly
-		  				id="memberEmail" th:value="${member.memberEmail}">
-		  		</li>
-		  		<li>
-		  			<label for="memberPassword">비밀번호</label>
-		  			<input type="password" name="memberPassword" readonly
-		  			    id="memberPassword" th:value="${member.memberPassword}">
-		  		</li>
-		  		<li>
-		  			<label for="memberName">이름</label>
-		  			<input type="text" name="memberName" readonly
-		  			    id="memberName" th:value="${member.memberName}">
-		  		</li>
-		  		<li>
-		  			<label for="memberAge">나이</label>
-		  			<input type="text" name="memberAge" readonly
-		  			    id="memberAge" th:value="${member.memberAge}">
-		  		</li>
-		  	    <li>
-		  			<a th:href="@{/member/list}">
-		  				<button type="button">목록</button>
-		  			</a>
-		  		</li>
-		  	</ul>
-	  	  </fieldset>
+		  <form>
+			   <fieldset>
+			  	<ul>
+			  		<li>
+			  			<label for="memberId">이메일</label>
+			  			<input type="text" name="memberId" readonly
+			  				id="memberId" th:value="${member.memberId}">
+			  		</li>
+			  		<li>
+			  			<label for="password">비밀번호</label>
+			  			<input type="password" name="password" readonly
+			  			    id="password" th:value="${member.password}">
+			  		</li>
+			  		<li>
+			  			<label for="name">이름</label>
+			  			<input type="text" name="name" readonly
+			  			    id="name" th:value="${member.name}">
+			  		</li>
+			  	    <li>
+			  			<a th:href="@{/member/list}">
+			  				<button type="button">목록</button>
+			  			</a>
+			  		</li>
+			  	</ul>
+		  	  </fieldset>
+	  	  </form>
 	  	</div>
+	  </section>
 	</div>
 </body>
-</html>
+</html> -->

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>마이페이지</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+  <div class="ch">
+      <div th:replace="~{header::header-fragment}"></div>
+    <div id="account">
+      <div id="left">
+        <div id="mimage"></div>
+        <h6>OOO 님</h6>
+        <div class="mbutton" id="modify">설정</div>
+        <div class="mbutton" id="logout">로그아웃</div>
+      </div>
+      <div class="line2"></div>
+      <div id="right">
+
+        <h5>내 추천글</h5>
+        <div class="mcontent">
+          <p>제목1</p>
+          <p>제목2</p>
+          <p>제목3</p>
+          <p>제목4</p>
+          <p>제목5</p>
+        </div>
+
+        <h5>내 게시글</h5>
+        <div class="mcontent">
+          <p>제목1</p>
+          <p>제목2</p>
+          <p>제목3</p>
+          <p>제목4</p>
+          <p>제목5</p>
+        </div>
+
+        <h5>내 댓글</h5>
+        <div class="mcontent">
+          <p>제목1</p>
+          <p>제목2</p>
+          <p>제목3</p>
+          <p>제목4</p>
+          <p>제목5</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
